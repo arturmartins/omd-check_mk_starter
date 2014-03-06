@@ -1,3 +1,7 @@
+#!/bin/bash
+
 #2-create-omd
 
-omd create $1 && omd start $1 && su - $1
+# do not use spaces or dashes
+site_name="env_prod"
+omd create $site_name && omd start $site_name && su - $site_name
